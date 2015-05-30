@@ -3,5 +3,7 @@ Rails.application.routes.draw do
   
   get 'learn-more', to: 'staticpages#learn_more'
   
-  get 'posts', to: 'staticpages#posts'
+  resources :map
+  
+  
 end
