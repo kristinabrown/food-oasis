@@ -1,8 +1,5 @@
+$(document).ready(function(){
 
-<script type="text/javascript"
-  src="https://maps.googleapis.com/maps/api/js?key=<%= ENV["GOOGLE_MAP_API"] %>">
-</script>
-<script type="text/javascript">
   function initialize() {
     var mapOptions = {
       center: { lat: 39.7392, lng: -104.9903},
@@ -12,4 +9,5 @@
         mapOptions);
   }
   google.maps.event.addDomListener(window, 'load', initialize);
-</script>
+  
+)}; 
