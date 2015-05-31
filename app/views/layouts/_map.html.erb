@@ -4,12 +4,34 @@
 </script>
 <script type="text/javascript">
   function initialize() {
+    var myLatlng = new google.maps.LatLng(39.7392,-104.9903);
+    var garden = new google.maps.LatLng(39.750153, -105.000337);
+    var communityGarden = new google.maps.LatLng(39.766186, -105.010379);
+    
     var mapOptions = {
-      center: { lat: 39.7392, lng: -104.9903},
-      zoom: 15
+      center: myLatlng,
+      zoom: 13
     };
     var map = new google.maps.Map(document.getElementById('map-canvas'),
         mapOptions);
+        
+    var Denver = new google.maps.Marker({
+         position: myLatlng,
+         map: map,
+         title: 'Hello World!'
+     });
+     
+     var Place1 = new google.maps.Marker({
+          position: garden,
+          map: map,
+          title: 'Garden World'
+      });
+      
+      var Place2 = new google.maps.Marker({
+           position: communityGarden,
+           map: map,
+           title: 'Community Growers'
+       });
   }
   google.maps.event.addDomListener(window, 'load', initialize);
 </script>
