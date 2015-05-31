@@ -1,40 +1,38 @@
 <div class="container">
-  <h1 class="text-center learn-more-header center-align"> Our Mission </h1>
+  <h1 class="learn-more-header center-align"> Our Mission </h1>
 </div>
-  <div class="row">
-    <div class="col s4">
-      <%= image_tag 'carrots.png', class:"learn-more-image responsive-img"%>
-    </div>
-    <div class="col s4">
-      <%= image_tag 'apples.png', class:"learn-more-image responsive-img"%>
-    </div>
-    <div class="col s4">
-      <%= image_tag 'veggies.png', class:"learn-more-image responsive-img"%>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="col-md-10 col-md-offset-1">
-      <p class="lead">
-        A food desert is a geographic area where affordable and nutritious food is difficult to obtain, particularly for those without 
-        access to an automobile. Food deserts usually exist in rural areas and low-income communities. Some research links them to diet-related 
-        health problems in affected populations.</p>
-      <p>
-      <strong>Food Oasis</strong> helps people find and share fruit locally, both backyard bounty and abundance on public lands - 10,000 trees
-       nationwide and counting!
-       Food Oasis was created to make use of the abundant fruit growing in our urban environments. Currently, 
-       the bulk of fruit grown in backyards and in our cities goes to waste, while the fruit we consume is grown in water-intensive 
-       orchards far from our homes. We envision a different future, where the bulk of backyard fruit is utilized and shared between neighbors 
-       and our diets replete with home-made goodies. Join us in creating a future where the food we eat is truly fresh, seasonal and local!
-       </p>
-    </div>
+<div class="row">
+  <div class="col s4 z-depth-1">
+    <%= image_tag 'carrots.png', class:"learn-more-image responsive-img"%>
   </div>
+  <div class="col s4 z-depth-1 ">
+    <%= image_tag 'apples.png', class:"learn-more-image responsive-img"%>
+  </div>
+  <div class="col s4 z-depth-1">
+    <%= image_tag 'veggies.png', class:"learn-more-image responsive-img"%>
+  </div>
+</div>
 
-  <div class="row">
-    <div class="col-md-3 col-md-offset-3">
-      <%= link_to "Sign Up", '#', :class => "btn btn-lg btn-primary", :id => "info-page-btn" %>
-    </div>
-    <div class="col-md-2 col-md-offset-1">
-      <%= link_to "Volunteer", '#', :class => "btn btn-lg btn-primary", :id => "info-page-btn" %>
-    </div>
+<div class="row">
+  <div class="col s10 offset-s1">
+    <p class="lead">
+      A food desert is a geographic area where affordable and nutritious food is difficult to obtain, particularly for those without 
+      access to an automobile. Food deserts usually exist in rural areas and low-income communities. Some research links them to diet-related 
+      health problems in affected populations.</p>
+    <p>
+    <strong>Food Oasis</strong> helps people find and share fruit locally, both backyard bounty and abundance on public lands - 10,000 trees
+     nationwide and counting!
+     Food Oasis was created to make use of the abundant fruit growing in our urban environments. Currently, 
+     the bulk of fruit grown in backyards and in our cities goes to waste, while the fruit we consume is grown in water-intensive 
+     orchards far from our homes. We envision a different future, where the bulk of backyard fruit is utilized and shared between neighbors 
+     and our diets replete with home-made goodies. Join us in creating a future where the food we eat is truly fresh, seasonal and local!
+     </p>
   </div>
+</div>
+
+
+<div class="center-align">
+  <%= link_to "Sign Up", '#', :class => "waves-effect waves-light btn", :id => "info-page-btn" %>
+  <%= link_to "Volunteer", '#', :class => "waves-effect waves-light btn", :id => "info-page-btn" %>
+</div>
