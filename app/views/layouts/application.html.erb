@@ -1,162 +1,27 @@
 <!DOCTYPE html>
+<html>
 <head>
+  <title>FoodOasis</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>FoodOasis</title>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
 
-  <!-- CSS  -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+
   <%= stylesheet_link_tag "materialize.css" %>
   <%= stylesheet_link_tag "style.css" %>
-</head>
-<body>
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Food Oasis</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
+  <%= render :partial => 'layouts/map.html.erb' %>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    </div>
-  </nav>
-
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center teal-text text-lighten-2">Food Oasis</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">Bringing quality food from a garden to your table</h5>
-        </div>
-        <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-        </div>
-        <br><br>
-
-      </div>
-    </div>
-    <div class="parallax"><%= image_tag("background4.jpg", alt: "Unsplashed background img 1") %></div>
-  </div>
-
-
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="mdi-image-flash-on"></i></h2>
-            <h5 class="center">Obi-Wan Never Told You</h5>
-
-            <p class="light">Jedi master bantha these aren't the droids you're looking for. Aren't you a little short for a stormtrooper tractor beam galactic republic. The empire strikes back fully operational battle station there is no try I'm here to rescue you. .</p> </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="mdi-social-group"></i></h2>
-            <h5 class="center">I Am Your Father</h5>
-
-            <p class="light"> Ewok Aunt Beru a new hope jawa that's no moon, it's a space station. Tatooine pick up some power converters it's a trap Greedo I'd just as soon kiss a wookiee spice mines. Wretched hive of scum and villainy scoundrel Chewbacca. </p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="mdi-action-settings"></i></h2>
-            <h5 class="center">The Force is Strong With This One</h5>
-
-            <p class="light">More powerful than you can possibly imagine the Force star destroyer ice planet Hoth. I find your lack of faith disturbing Master Yoda star systems. Nerf-herder do or do not thermal detonator tie fighter don't get cocky.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">This is our project. We gon' make it wurk</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><%= image_tag("background1.jpg", alt: "Unsplashed background img 2") %></div>
-  </div>
-
-  <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Stormtrooper a new hope battle of Yavin. Han Solo Ewok R2D2 Greedo. Lando Calrissian hyperspace never tell me the odds Yoda. Jabba the Hutt land strider the dark side help me Obi-Wan Kenobi Boba Fett scoundrel. Trench run aren't you a little short for a stormtrooper sandpeople Kessel Run in less than twelve parsecs forest moon secret rebel base.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">I'm not sure what to put here, but am tired of Ipsum</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><%= image_tag("background5.jpg", alt: "Unsplashed background img 3") %></div>
-  </div>
-
-  <footer class="page-footer teal">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">About Us</h5>
-          <p class="grey-text text-lighten-4">We are a group of students at the Turing School of Software and Design, a seven-month immersive web-development program focusing on Ruby and Javascript. If you like what you see here, please feel free to reach out! </p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      More about <a class="brown-text text-lighten-3" href="http://turing.io">Turing</a>
-      </div>
-    </div>
-  </footer>
-
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <%= javascript_include_tag "materialize.js" %>
   <%= javascript_include_tag "init.js" %>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+  <%= render :partial => 'layouts/nav.html.erb' %>
+  <%= yield %>
+  <%= render :partial => 'layouts/footer.html.erb' %>
 
-  </body>
+</body>
 </html>
