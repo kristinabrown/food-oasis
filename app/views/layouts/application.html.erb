@@ -6,22 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
 
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 
-  <%= stylesheet_link_tag "materialize.css" %>
-  <%= stylesheet_link_tag "style.css" %>
+  <%= stylesheet_link_tag "materialize.css", type: "text/css", rel: "stylesheet", media: "screen,projection" %>
+  <%= stylesheet_link_tag "style.css", type: "text/css", rel: "stylesheet", media: "screen,projection" %>
   <%= render :partial => 'layouts/map.html.erb' %>
 
-  <%= javascript_include_tag "materialize.js" %>
-  <%= javascript_include_tag "init.js" %>
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 </head>
 <body>
+
   <%= render :partial => 'layouts/nav.html.erb' %>
   <%= yield %>
   <%= render :partial => 'layouts/footer.html.erb' %>
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <%= javascript_include_tag "materialize.js" %>
+  <%= javascript_include_tag "init.js" %>
 
 </body>
 </html>
