@@ -1,16 +1,61 @@
 <!DOCTYPE html>
-<html>
 <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <title>FoodOasis</title>
-  <%= render :partial => 'layouts/map.html.erb' %>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
+  <%= render :partial => 'layouts/map.html.erb' %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag "materialize.css" %>
+  <%= stylesheet_link_tag "style.css" %>
+
 </head>
 <body>
-  <%= render :partial => 'layouts/sitewide_header.html.erb' %>
-  <%= yield %>
+<%= render :partial => "layouts/sitewide_header.html.erb" %>
+<%= yield %>
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About Us</h5>
+          <p class="grey-text text-lighten-4">We are a group of students at the Turing School of Software and Design, a seven-month immersive web-development program focusing on Ruby and Javascript. If you like what you see here, please feel free to reach out! </p>
 
-</body>
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      More about <a class="brown-text text-lighten-3" href="http://turing.io">Turing</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <%= javascript_include_tag "materialize.js" %>
+  <%= javascript_include_tag "init.js" %>
+
+  </body>
 </html>
