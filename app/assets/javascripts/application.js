@@ -13,5 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
+//= require map.js
 //= require_tree .
 //= require materialize-sprockets

@@ -6,6 +6,6 @@ class StaticpagesController < ApplicationController
   def learn_more
   end
   
-  def posts
+  def find
   end
 end
