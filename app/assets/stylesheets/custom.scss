@@ -1,3 +1,17 @@
+html, body {
+  height: 100%; 
+  #map-canvas { 
+    height: 75%;
+    width: 75%;
+    margin: 0 auto; 
+    padding: 0 auto;
+  }
+}
+
+  #map-title{
+    color: white;
+  }
+
 .main-hero {
   background-image: url('city-garden.png');
   background-repeat: no-repeat;
@@ -11,6 +25,7 @@
   margin-bottom: 0px;
 }
 
+
 .learn-more-header {
   border-bottom: 1px solid black;
 }
@@ -23,12 +38,6 @@
 }
 #info-page-btn {
   margin-bottom: 15px;
-}
-
-html, body, #map-canvas { 
-  height: 100%; 
-  margin: 0; 
-  padding: 0;
 }
 
 
