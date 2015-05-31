@@ -1,6 +1,3 @@
-a {
-  ho
-}
 .main-hero {
   background-image: url('city-garden.png');
   background-repeat: no-repeat;
@@ -24,14 +21,13 @@ a {
   max-height: 200px;
   
 }
-
 #info-page-btn {
   margin-bottom: 15px;
 }
 
 html, body, #map-canvas { 
   height: 100%; 
-  margin: 0px; 
+  margin: 0; 
   padding: 0;
 }
 
