@@ -8,11 +8,20 @@
     var communityGarden = new google.maps.LatLng(39.766186, -105.010379);
     var forageCity = new google.maps.LatLng(39.756355, -104.953817);
     var grow = new google.maps.LatLng(39.730584, -104.949568);
+
+// This makes the map dynamic
+    google.maps.event.addDomListener(window, "resize", function() {
+       var center = map.getCenter();
+       google.maps.event.trigger(map, "resize");
+       map.setCenter(center); 
+});
     
     
     var mapOptions = {
       center: myLatlng,
-      zoom: 13
+      zoom: 13,
+      scrollwheel: false, // Comment this if we want to enable srollwheel zoom
+      
     };
     var map = new google.maps.Map(document.getElementById('map-canvas'),
         mapOptions);
