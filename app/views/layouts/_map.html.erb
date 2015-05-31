@@ -7,6 +7,9 @@
     var myLatlng = new google.maps.LatLng(39.7392,-104.9903);
     var garden = new google.maps.LatLng(39.750153, -105.000337);
     var communityGarden = new google.maps.LatLng(39.766186, -105.010379);
+    var forageCity = new google.maps.LatLng(39.756355, -104.953817);
+    var grow = new google.maps.LatLng(39.730584, -104.949568);
+    
     
     var mapOptions = {
       center: myLatlng,
@@ -27,10 +30,22 @@
           title: 'Garden World'
       });
       
+    var Place2 = new google.maps.Marker({
+         position: communityGarden,
+         map: map,
+         title: 'Community Growers'
+     });
+         
+     var Place2 = new google.maps.Marker({
+          position: forageCity,
+          map: map,
+          title: 'Forage City'
+      });
+          
       var Place2 = new google.maps.Marker({
-           position: communityGarden,
+           position: grow,
            map: map,
-           title: 'Community Growers'
+           title: 'Growers R us'
        });
   }
   google.maps.event.addDomListener(window, 'load', initialize);
