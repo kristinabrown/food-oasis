@@ -15,3 +15,4 @@
 //= require twitter/bootstrap
 //= require map.js
 //= require_tree .
+//= require materialize-sprockets
