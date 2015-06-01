@@ -11,9 +11,43 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20150601225646) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "bulletins", force: :cascade do |t|
+    t.string   "body"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "bulletins", ["user_id"], name: "index_bulletins_on_user_id", using: :btree
+
+  create_table "map_markers", force: :cascade do |t|
+    t.integer  "bulletin_id"
+    t.string   "long_lat"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "map_markers", ["bulletin_id"], name: "index_map_markers_on_bulletin_id", using: :btree
+
+  create_table "users", force: :cascade do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "street_address"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip_code"
+    t.string   "email"
+    t.string   "password_digest"
+    t.boolean  "volunteer",       default: false
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+  end
+
+  add_foreign_key "bulletins", "users"
+  add_foreign_key "map_markers", "bulletins"
 end
