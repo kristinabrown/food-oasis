@@ -16,7 +16,6 @@ RSpec.describe Bulletin, type: :model do
                  email: "bill@williams.gov"
                  )
       }
-      # let(:mapmarker)
 
       it 'is valid' do
         expect(bulletin).to be_valid
