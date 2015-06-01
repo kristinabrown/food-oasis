@@ -1,4 +1,21 @@
 /* line 1, /Users/ddaniel/turing/3module/projects/food-oasis/app/assets/stylesheets/custom.scss */
+html, body {
+  height: 100%;
+}
+/* line 3, /Users/ddaniel/turing/3module/projects/food-oasis/app/assets/stylesheets/custom.scss */
+html #map-canvas, body #map-canvas {
+  height: 95%;
+  width: 95%;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+/* line 11, /Users/ddaniel/turing/3module/projects/food-oasis/app/assets/stylesheets/custom.scss */
+#map-title {
+  color: white;
+}
+
+/* line 15, /Users/ddaniel/turing/3module/projects/food-oasis/app/assets/stylesheets/custom.scss */
 .main-hero {
   background-image: url("city-garden.png");
   background-repeat: no-repeat;
@@ -8,29 +25,46 @@
   top-margin: 0;
 }
 
-/* line 10, /Users/ddaniel/turing/3module/projects/food-oasis/app/assets/stylesheets/custom.scss */
+/* line 24, /Users/ddaniel/turing/3module/projects/food-oasis/app/assets/stylesheets/custom.scss */
 #site-nav {
   margin-bottom: 0px;
 }
 
-/* line 14, /Users/ddaniel/turing/3module/projects/food-oasis/app/assets/stylesheets/custom.scss */
+/* line 29, /Users/ddaniel/turing/3module/projects/food-oasis/app/assets/stylesheets/custom.scss */
 .learn-more-header {
   border-bottom: 1px solid black;
 }
 
-/* line 18, /Users/ddaniel/turing/3module/projects/food-oasis/app/assets/stylesheets/custom.scss */
+/* line 33, /Users/ddaniel/turing/3module/projects/food-oasis/app/assets/stylesheets/custom.scss */
 .learn-more-image {
-  margin-top: 50px;
-  margin-left: 330px;
-  min-height: 300px;
-  max-height: 300px;
+  min-height: 200px;
+  max-height: 200px;
 }
 
-/* line 26, /Users/ddaniel/turing/3module/projects/food-oasis/app/assets/stylesheets/custom.scss */
+/* line 39, /Users/ddaniel/turing/3module/projects/food-oasis/app/assets/stylesheets/custom.scss */
+#info-page-btn {
+  margin-bottom: 15px;
+}
+
+/* line 44, /Users/ddaniel/turing/3module/projects/food-oasis/app/assets/stylesheets/custom.scss */
 #signup-button {
   margin-top: 250px;
   margin-left: 470px;
   width: 200px;
+}
+
+/* line 50, /Users/ddaniel/turing/3module/projects/food-oasis/app/assets/stylesheets/custom.scss */
+.info-box {
+  border: 1px solid black;
+  border-radius: 25px;
+  min-height: 300px;
+}
+
+/* line 56, /Users/ddaniel/turing/3module/projects/food-oasis/app/assets/stylesheets/custom.scss */
+.info-arrow {
+  margin-top: 120px;
+  margin-right: 20px;
+  font-size: 3em;
 }
 /*!
  * Materialize v0.96.1 (http://materializecss.com)
