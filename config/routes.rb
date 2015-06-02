@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   
   get 'learn-more', to: 'staticpages#learn_more'
   
-  
+  get '/auth/twitter/callback', to: "sessions#create"
+  delete '/logout', to: "sessions#destroy"  
 end
