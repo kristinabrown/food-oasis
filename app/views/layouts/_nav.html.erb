@@ -37,11 +37,6 @@
       <div class="row">
 
       <!-- Login form -->
-      <% form_for @user, html: { class: "col s12"} do |f| %>
-        <div class="row">
-        <%= f.text_field "Email", class: "input-field col s6 center-align" %>
-        </div>
-      <% end %>
       <form class="col s12">
         <div class="row">
           <div class="input-field col s6">
@@ -65,6 +60,8 @@
 
     <div class="modal-footer">
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+      <%= link_to "Login With Twitter", "/auth/twitter", class: "modal-action modal-close waves-effect waves-green btn-flat " %>
+      
     </div>
   </div>
 

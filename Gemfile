@@ -26,6 +26,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'faker'
 gem 'figaro'
+gem 'omniauth-twitter'
 
 group :production do  
   gem 'rails_12factor'  
