@@ -28,7 +28,7 @@ gem 'faker'
 gem 'figaro'
 gem 'omniauth-twitter'
 
-group :production do  
+  group :production do  
   gem 'rails_12factor'  
 end 
 
